@@ -15,7 +15,7 @@
         "rootDirs": ["packages"],
         "baseUrl": "./",
         "paths": {
-            "@alfalab/core-components-*": ["packages/*/src"]
+            "@friday-team/core-components-*": ["packages/*/src"]
         }
     },
     "exclude": ["node_modules", "build", "coverage"]

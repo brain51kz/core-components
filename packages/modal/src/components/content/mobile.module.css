@@ -1,9 +1,0 @@
-@import '../../vars.css';
-
-.content {
-    padding: 0 var(--gap-m);
-
-    &:last-child {
-        padding-bottom: var(--gap-m);
-    }
-}

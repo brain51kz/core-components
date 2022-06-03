@@ -1,10 +1,10 @@
 const path = require('path');
 
-const componentsPrefix = '@alfalab/core-components-';
+const componentsPrefix = '@friday-team/core-components-';
 const componentsDir = path.resolve(__dirname, '../../packages');
 
 /**
- * Локально резолвит импорт @alfalab/core-components.
+ * Локально резолвит импорт @friday-team/core-components.
  * Ищет эти модули не в node_modules, а в папке `componentsDir`
  */
 module.exports = componentResolver = {

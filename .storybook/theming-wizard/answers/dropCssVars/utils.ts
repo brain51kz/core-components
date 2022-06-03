@@ -6,7 +6,7 @@ export const withoutAruiScriptsExample = (answers: Answers) => {
     };
 
     if (answers.product !== 'default') {
-        settings.importFrom = `./node_modules/@alfalab/core-components/themes/${answers.product}.css`;
+        settings.importFrom = `./node_modules/@friday-team/core-components/themes/${answers.product}.css`;
     }
 
     return `postcssCustomProperties(${JSON.stringify(settings, null, 4)})`;
@@ -16,7 +16,7 @@ export const aruiScriptsExample = (answers: Answers) => {
     return JSON.stringify(
         {
             keepCssVars: false,
-            componentsTheme: `./node_modules/@alfalab/core-components/themes/${answers.product}.css`,
+            componentsTheme: `./node_modules/@friday-team/core-components/themes/${answers.product}.css`,
         },
         null,
         4,
@@ -24,7 +24,7 @@ export const aruiScriptsExample = (answers: Answers) => {
 };
 
 export const darkModeExample = (answers: Answers) => `
-import darkMode from '@alfalab/core-components/themes/compiled/${answers.product}-dark-${
+import darkMode from '@friday-team/core-components/themes/compiled/${answers.product}-dark-${
     answers.product === 'mobile' ? 'bluetint' : 'indigo'
 }';
 

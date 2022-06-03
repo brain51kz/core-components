@@ -18,19 +18,19 @@
 Установка всех компонентов:
 
 ```bash
-yarn add @alfalab/core-components
+yarn add @friday-team/core-components
 ```
 
 Каждый компонент публикуется отдельным пакетом, поэтому вы можете подключить только нужный, не устанавливая библиотеку целиком:
 
 ```bash
-yarn add @alfalab/core-components-button
+yarn add @friday-team/core-components-button
 ```
 
 ## Использование
 
 ```jsx
-import { Button } from '@alfalab/core-components/button';
+import { Button } from '@friday-team/core-components/button';
 ```
 
 ## Темизация
@@ -81,7 +81,7 @@ $ yarn start
 {
     "compilerOptions": {
         "paths": {
-            "@alfalab/core-components-popover": ["../popover/src"] // для корректоной сборки rollup
+            "@friday-team/core-components-popover": ["../popover/src"] // для корректоной сборки rollup
         }
     },
     "references": [{ "path": "../popover" }] // для корректной работы IDE
@@ -144,25 +144,25 @@ $ git push
 Импорт `ES5`:
 
 ```tsx
-import { Button } from '@alfalab/core-components/button';
+import { Button } from '@friday-team/core-components/button';
 // или
-import { Button } from '@alfalab/core-components-button';
+import { Button } from '@friday-team/core-components-button';
 ```
 
 Импорт `ES5` с css-модулями:
 
 ```tsx
-import { Button } from '@alfalab/core-components/button/cssm';
+import { Button } from '@friday-team/core-components/button/cssm';
 // или
-import { Button } from '@alfalab/core-components-button/dist/cssm';
+import { Button } from '@friday-team/core-components-button/dist/cssm';
 ```
 
 Импорт `ES2020`:
 
 ```tsx
-import { Button } from '@alfalab/core-components/button/modern';
+import { Button } from '@friday-team/core-components/button/modern';
 // или
-import { Button } from '@alfalab/core-components-button/dist/modern';
+import { Button } from '@friday-team/core-components-button/dist/modern';
 ```
 
 ## Правила контрибьютинга

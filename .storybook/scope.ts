@@ -9,7 +9,7 @@ const componentsContext = require.context(
     /^\.\/(.*)\/src\/(index|desktop|mobile|responsive|circle|super-ellipse).ts$/,
 );
 
-const glyphContext = require.context('../node_modules/@alfalab/icons-glyph', true, /(.*).js$/);
+const glyphContext = require.context('../node_modules/@friday-team/icons-glyph', true, /(.*).js$/);
 
 const requireComponents = (context: __WebpackModuleApi.RequireContext) =>
     context.keys().reduce((acc: Record<string, ComponentType<unknown>>, key) => {

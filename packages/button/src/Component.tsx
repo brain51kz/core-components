@@ -10,7 +10,7 @@ import cn from 'classnames';
 import mergeRefs from 'react-merge-refs';
 
 import { useFocus } from '@alfalab/hooks';
-import { Loader } from '@alfalab/core-components-loader';
+import { Loader } from '@friday-team/core-components-loader';
 
 import styles from './index.module.css';
 import defaultColors from './default.module.css';
@@ -116,9 +116,9 @@ const logWarning = (view: Required<ComponentProps>['view']) => {
     // eslint-disable-next-line no-console
     console.warn(
         // eslint-disable-next-line prefer-template
-        `@alfalab/core-components/button: view='${view}' будет удален в следующих мажорных версиях. ` +
+        `@friday-team/core-components/button: view='${view}' будет удален в следующих мажорных версиях. ` +
             `Используйте view='${viewsMap[view]}'. Чтобы поменять все кнопки на проекте разом, можно воспользоваться codemod: ` +
-            'npx @alfalab/core-components-codemod --transformers=button-views src/**/*.tsx',
+            'npx @friday-team/core-components-codemod --transformers=button-views src/**/*.tsx',
     );
 };
 

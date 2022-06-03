@@ -16,24 +16,24 @@ mkdir -p dist
 copy_css="yarn copyfiles -u 1 \"src/**/*.{css,js}\" dist"
 copy_package="yarn copyfiles package.json dist"
 lerna exec \
-    --scope @alfalab/core-components-vars \
-    --scope @alfalab/core-components-themes \
+    --scope @friday-team/core-components-vars \
+    --scope @friday-team/core-components-themes \
     -- "$copy_css && $copy_package"
 
 # собираю пакет themes
-lerna exec --scope @alfalab/core-components-themes -- node $(pwd)/bin/build-themes.js
+lerna exec --scope @friday-team/core-components-themes -- node $(pwd)/bin/build-themes.js
 
 # собираю все подпакеты с компонентами
 lerna exec --concurrency $CONCURRENCY \
-    --ignore @alfalab/core-components-codemod \
+    --ignore @friday-team/core-components-codemod \
     -- $(pwd)/bin/rollup.sh
 
 
 # копирую собранные css пакеты в корневой пакет
 copy_to_root="cp -rp dist/ ../../dist/\${PWD##*/}"
 lerna exec \
-    --scope @alfalab/core-components-vars \
-    --scope @alfalab/core-components-themes \
+    --scope @friday-team/core-components-vars \
+    --scope @friday-team/core-components-themes \
     -- $copy_to_root
 
 # копирую package.json в сборку корневого пакета

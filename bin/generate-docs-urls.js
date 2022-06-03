@@ -27,7 +27,7 @@ async function main() {
     );
 
     const components = packagesInfos.map(packageInfo => {
-        const packageName = packageInfo.name.replace('@alfalab/core-components-', '');
+        const packageName = packageInfo.name.replace('@friday-team/core-components-', '');
         const componentName = upperfirst(camelCase(packageName));
 
         return {

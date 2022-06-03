@@ -6,7 +6,7 @@ type QueriesPool = Record<string, MediaQueryList>;
 
 type Counters = Record<string, number>;
 
-// TODO: перенести в alfalab/utils
+// TODO: перенести в friday-team/utils
 const pool: QueriesPool = {};
 const refCounters: Counters = {};
 

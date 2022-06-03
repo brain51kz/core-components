@@ -2,9 +2,9 @@ import { Meta, Story, Props } from '@storybook/addon-docs';
 import { select, number } from '@storybook/addon-knobs';
 import { ComponentHeader, Tabs } from 'storybook/blocks';
 
-import { Button } from '@alfalab/core-components-button';
-import { Space } from '@alfalab/core-components-space';
-import { Typography } from '@alfalab/core-components-typography';
+import { Button } from '@friday-team/core-components-button';
+import { Space } from '@friday-team/core-components-space';
+import { Typography } from '@friday-team/core-components-typography';
 
 import { name, version } from '../../package.json';
 import { Mq, useMatchMedia } from '../';
@@ -40,12 +40,12 @@ import Changelog from '../../CHANGELOG.md';
 <ComponentHeader
     name='Mq'
     version={version}
-    package='@alfalab/core-components/mq'
+    package='@friday-team/core-components/mq'
     stage={1}
 />
 
 ```tsx
-import { Mq, useMatchMedia } from '@alfalab/core-components/mq';
+import { Mq, useMatchMedia } from '@friday-team/core-components/mq';
 ```
 
 <Tabs

@@ -3,7 +3,7 @@ import path from 'path';
 
 import { checkOrCreateDir, readFile, writeFile } from './common';
 
-const importTypesRegexp = /((?:from |import\()['"])@alfalab\/core-components-(.+?)(['"])/;
+const importTypesRegexp = /((?:from |import\()['"])@friday-team\/core-components-(.+?)(['"])/;
 
 async function transformTypings(source, rootDir) {
     const rootAbsDir = path.resolve(rootDir);

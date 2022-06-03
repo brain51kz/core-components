@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { List } from '@alfalab/core-components-list';
-import { Link } from '@alfalab/core-components-link';
-import { Typography } from '@alfalab/core-components-typography';
+import { List } from '@friday-team/core-components-list';
+import { Link } from '@friday-team/core-components-link';
+import { Typography } from '@friday-team/core-components-typography';
 
 import { Example } from 'storybook-addon-live-examples';
 import { Answers } from '.storybook/theming-wizard/types';

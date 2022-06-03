@@ -23,7 +23,7 @@ const currentPkg = path.join(currentPackageDir, 'package.json');
 const rootPkg = require(path.resolve(currentPackageDir, '../../package.json'))
 const pkg = require(currentPkg);
 
-const currentComponentName = pkg.name.replace('@alfalab/core-components-', '');
+const currentComponentName = pkg.name.replace('@friday-team/core-components-', '');
 
 const baseConfig = {
     input: [

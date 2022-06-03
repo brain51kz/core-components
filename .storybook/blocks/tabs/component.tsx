@@ -7,7 +7,7 @@ import React, {
     isValidElement,
     ReactElement,
 } from 'react';
-import { TabsResponsive, Tab, TabsResponsiveProps } from '@alfalab/core-components-tabs';
+import { TabsResponsive, Tab, TabsResponsiveProps } from '@friday-team/core-components-tabs';
 import { Changelog } from '../changelog';
 
 enum TabName {

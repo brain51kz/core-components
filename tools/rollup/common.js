@@ -15,5 +15,5 @@ export async function checkOrCreateDir(dir) {
 }
 
 export const requireRegExp = new RegExp(
-    /(\b(?:require\(|import |from )['"])@alfalab\/core-components-(.*?)(['"])/,
+    /(\b(?:require\(|import |from )['"])@friday-team\/core-components-(.*?)(['"])/,
 );

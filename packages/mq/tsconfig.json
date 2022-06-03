@@ -6,7 +6,7 @@
         "rootDirs": ["src"],
         "baseUrl": ".",
         "paths": {
-            "@alfalab/core-components-*": ["../*/src"]
+            "@friday-team/core-components-*": ["../*/src"]
         }
     }
 }
